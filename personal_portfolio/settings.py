@@ -25,7 +25,7 @@ SECRET_KEY = 'y5hmuk*-4*%wor)ek2up+w+x!yx8l40j*n93#1zn!p66)k=c#2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['render-tutorial056.onrender.com']
 
 
 # Application definition
@@ -137,9 +137,8 @@ USE_TZ = True
 
 # static files
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT =os.path.join(BASE_DIR, 'staticfiles')
 
 # media files
 MEDIA_URL = '/media/'
